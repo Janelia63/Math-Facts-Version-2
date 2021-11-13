@@ -7,21 +7,33 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="about" href="about.html">
+        <link rel="contact" href="contact.html">
+        <script src="https://kit.fontawesome.com/f03d3da318.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header>
-            <h1>Math Facts</h1>
+            <h1><i class="fas fa-award"></i> Math Facts</h1>
 
-            <nav>
-                <ul>
-                    <li><a href="default.asp">home</a></li>
-                    <li><a href="about.asp">about</a></li>
-                    <li><a href="contact.asp">contact</a></li>
-                </ul>
-            </nav>
+            <div class="topnav">
+                    <a class="active" href="index.html"><i class="fas fa-home"></i> home</a>
+                    <a href="about.html"><i class="fas fa-address-card"></i> about</a>
+                    <a href="contact.html"><i class="fas fa-envelope"></i> contact</a> 
+                    <a href="#"><i class="fas fa-sign-in-alt"></i> login</a>
+            </div>
+
         </header>
-        
-        
-        <script src="" async defer></script>
+    
+        <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
     </body>
 </html>
